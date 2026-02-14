@@ -1,0 +1,20 @@
+{
+  "name": "telegram-ideas-bot",
+  "version": "1.0.0",
+  "description": "בוט טלגרם לניהול רעיונות וכתיבת מאמרים",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "keywords": ["telegram", "bot", "ideas", "ai"],
+  "author": "Gil",
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "@anthropic-ai/sdk": "^0.32.1",
+    "node-schedule": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
