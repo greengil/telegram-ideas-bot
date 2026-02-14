@@ -5,7 +5,7 @@ const fs = require('fs').promises;
 const bot = new TelegramBot(process.env.TELEGRAM_TOKEN, { polling: true });
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
-const categories = ['כללי', 'אבטחת סייבר', 'טכנולוגיה', 'ניהול', 'אישי'];
+const categories = ['General', 'Cybersecurity', 'Technology', 'Management', 'Personal'];
 
 async function loadData(userId) {
   try {
@@ -22,5 +22,4 @@ async function saveData(userId, data) {
 }
 
 bot.onText(/\/start/, async (msg) => {
-  await bot.sendMessage(msg.chat.id, 
-    'שלום! שלח לי רעיון ואשמור אותו.\n\nפקודות:\n/ideas - רשימה\n/writ
+  await bot.sendMessage(msg.chat.id,
