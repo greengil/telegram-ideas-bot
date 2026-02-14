@@ -5,4 +5,4 @@ bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, 'Bot works!');
 });
 
-console.log('Running');
+console.log('Running');"" 
