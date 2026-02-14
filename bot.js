@@ -323,6 +323,6 @@ New File → שמור בשם `.gitignore`:
 ```
 node_modules/
 data/
-.env
+
 *.json
 !package.json
